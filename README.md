@@ -78,3 +78,18 @@ A Sentence Segmentation é o processo de dividir um texto em frases ou sentença
 - "Olá! Como você está? Eu estou bem." seria segmentado em duas sentenças: "Olá! Como você está?" e "Eu estou bem."
 
 
+## Minimum Text Edit em NLP
+
+O Minimum Text Edit (Edição Mínima de Texto) é um conceito no Processamento de Linguagem Natural (NLP) que se refere à quantidade mínima de alterações necessárias para transformar um texto de origem em um texto de destino. Essas alterações podem incluir inserções, exclusões ou substituições de caracteres, palavras ou frases. O objetivo é encontrar a sequência mais curta de edições para transformar um texto no outro.
+
+Essa medida é frequentemente usada em tarefas como correção automática de texto, detecção de plágio e alinhamento de texto. O algoritmo de Edição Mínima de Texto mais comum é conhecido como "Distância de Levenshtein", que calcula o número mínimo de edições necessárias para transformar uma sequência de caracteres em outra.
+
+### Exemplo de Minimum Text Edit
+
+Vamos considerar o exemplo de transformar a palavra "casa" na palavra "casaco". Aqui está o processo de Edição Mínima de Texto:
+
+1. Inserção: Adicionar o caractere "o" após o último caractere da palavra "casa".
+2. Resultado: "casao".
+
+Portanto, a distância de edição mínima entre "casa" e "casaco" é 1, representando a única alteração necessária.
+
