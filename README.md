@@ -145,4 +145,17 @@ A função de modelo de probabilidade é responsável por calcular as probabilid
 
 Por fim, a amostragem de texto permite gerar novas sequências de texto com base no Modelo de Linguagem treinado. Por exemplo, a função `sample_text(model, seed, length)` recebe um modelo de linguagem, uma semente inicial e um comprimento desejado e gera uma sequência de texto amostrada com base nas probabilidades aprendidas.
 
+## Topic Modelling com Representações de Palavras e Documentos
+
+- Vetores One-Hot: Representações binárias onde cada palavra ou documento é representado por um vetor de tamanho igual ao vocabulário.
+- Implementação de Vetores One-Hot: Matriz em que cada linha representa um documento e cada coluna representa uma palavra do vocabulário.
+- Limitações dos Vetores One-Hot: Não capturam a semântica entre as palavras e são ineficientes para grandes vocabulários.
+- Frequência do Termo (TF): Métrica que representa a importância de uma palavra em um documento, calculada pela contagem do número de ocorrências.
+- Implementação da Frequência do Termo: Cálculo da contagem de ocorrências de palavras em cada documento.
+- TF-IDF (Term Frequency-Inverse Document Frequency): Métrica que combina a Frequência do Termo com a Frequência Inversa de Documentos, considerando a importância do termo no documento e em relação ao conjunto de documentos.
+- Implementação do TF-IDF: Leitura do corpus, cálculo da Frequência de Documentos e cálculo do TF-IDF para cada termo em cada documento.
+- Topic Modeling com TF-IDF: Identificação de tópicos ocultos nos documentos usando técnicas de agrupamento ou modelagem probabilística.
+- Exemplo de Topic Modeling com Gensim: Uso da biblioteca Gensim para implementar algoritmos de Topic Modeling, como o LDA (Latent Dirichlet Allocation).
+
+
 
